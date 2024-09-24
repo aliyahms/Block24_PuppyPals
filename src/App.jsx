@@ -1,6 +1,6 @@
-function App() {
-  const [count, setCount] = useState(0);
+import { puppyList } from "./data.js";
 
+function App() {
   return (
     <>
       <div></div>
