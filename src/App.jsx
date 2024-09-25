@@ -25,10 +25,27 @@ function App() {
     </div>
   );
 
+  const $featPupId = featPupId && (
+    <section className="featuredPuppy">
+      <h2>{featPupId.name}</h2>
+      <dl>
+        <div>
+          <dt>Age</dt>
+          <dd>{featPupId.age}</dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd>{featPupId.email}</dd>
+        </div>
+      </dl>
+    </section>
+  );
+
   return (
     <>
-      <h2>Puppies</h2>
+      <h1>Puppies</h1>
       {$puppies}
+      {$featPupId}
     </>
   );
 }
